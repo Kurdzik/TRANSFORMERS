@@ -1,0 +1,6 @@
+FROM huggingface/transformers-pytorch-gpu:latest
+
+RUN apt-get update -y
+WORKDIR /projects
+
+ENTRYPOINT [ "bash" ]

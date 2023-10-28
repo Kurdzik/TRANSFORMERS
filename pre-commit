@@ -1,0 +1,45 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: check-merge-conflict
+    -   id: debug-statements
+    -   id: requirements-txt-fixer
+    -   id: check-added-large-files
+    -   id: detect-private-key
+    -   id: check-json
+    -   id: check-case-conflict
+    -   id: check-symlinks
+    -   id: check-yaml-formatted
+    -   id: check-xml
+    -   id: check-yaml-keys
+    -   id: check-byte-order-marker
+    -   id: check-docstring-first
+    -   id: check-executables-have-shebangs
+    -   id: check-symlink-targets
+    -   id: check-yaml-comma
+    -   id: check-ast
+    -   id: check-toml
+    -   id: check-yaml-spaces
+    -   id: check-merge-conflict-markers
+    -   id: check-shebang
+    -   id: check-xml-syntax
+    -   id: check-added-large-files-gh
+    -   id: check-requirements-txt
+    -   id: check-awk
+    -   id: check-terraform
+    -   id: check-xml-encoding
+    -   id: check-merge-conflict-style
+    -   id: check-merge-conflict-style-trailing-whitespace
+    -   id: check-merge-conflict-style-removed-section
+    -   id: check-merge-conflict-style-added-section
+    -   id: check-merge-conflict-style-conflict-marker-size
+    -   id: check-merge-conflict-style-conflict-marker-count
+    -   id: check-merge-conflict-style-conflict-marker-spacing
+    -   id: check-merge-conflict-style-conflict-marker-type
+    -   id: check-merge-conflict-style-conflict-marker-content
+    -   id: black
+    -   id: isort
