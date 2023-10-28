@@ -1,6 +1,12 @@
-FROM huggingface/transformers-pytorch-gpu:latest
+FROM python:3.10-bullseye
 
-RUN apt-get update -y
+COPY requirements.txt /tmp/requirements.txt
+
+RUN apt update -y && \
+    pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r /tmp/requirements.txt && \
+    rm /tmp/requirements.txt
+
 WORKDIR /projects
 
 ENTRYPOINT [ "bash" ]
