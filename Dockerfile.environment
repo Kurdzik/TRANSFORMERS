@@ -7,6 +7,8 @@ RUN apt update -y && \
     pip install --no-cache-dir -r /tmp/requirements.txt && \
     rm /tmp/requirements.txt
 
+RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
 WORKDIR /projects
 
 ENTRYPOINT [ "bash" ]
