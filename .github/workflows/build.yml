@@ -1,19 +1,27 @@
 name: Build and push image
 
 on:
-  workflow_run:
-    workflows: 
-      - CI
-    branches: 
-      - main
-    types: 
-      - completed
-
-jobs:         
+    push:
+      branches: 
+        - main
+    pull_request:
+        branches: 
+          - main
+        types: [closed]
+jobs:      
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: shellcheck
+        uses: ludeeus/action-shellcheck@1.1.0
+        with:
+          severity: error
+          scandir: './'
+          format: tty
   build_image:
     runs-on: ubuntu-latest
     steps:
-      
       - name: Checkout
         uses: actions/checkout@v4
       
