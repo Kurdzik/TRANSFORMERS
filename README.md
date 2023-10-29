@@ -19,8 +19,10 @@ placeholder
 
 3. **OPTIONAL** attach VS Code to a running container:
 3.1 Install Docker extesion in VS Code\
-3.2 Start container ![image](guide/start_container.png)\
-3.3 Attach container ![image](guide/attach_container.png)
+3.2 Start container\
+![image](guide/start_container.png)\
+3.3 Attach container\
+ ![image](guide/attach_container.png)
 
 <br>
 <hr>
